@@ -30,7 +30,7 @@ public class KeywordsDetector {
                 String word = MyString.lowerCase(keywords [z]);
                 if (sentence.indexOf(word) != -1)
                 {
-                    System.out.println(sentences [z]);
+                    System.out.println(sentences [i]);
                     break;
                 }
             }
