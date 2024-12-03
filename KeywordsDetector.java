@@ -24,13 +24,13 @@ public class KeywordsDetector {
     {
         for (int i = 0; i < sentences.length; i++)
          {
-            String sentence = sentences [i].toLowerCase();
+            String sentence = MyString.lowerCase(sentences [i]);
             for (int z = 0; z < keywords.length; z++) 
             {
-                String word = keywords [z].toLowerCase();
+                String word = MyString.lowerCase(keywords [z]);
                 if (sentence.indexOf(word) != -1)
                 {
-                    System.out.println(sentence);
+                    System.out.println(sentences [z]);
                     break;
                 }
             }
