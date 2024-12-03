@@ -200,9 +200,30 @@ public class ArrCharOps {
         }
         for (int i = 0; i < str1.length(); i++)
         {
-            
+            char ch = str2.charAt(i);
+            if (str1.charAt(i) < ch )
+            {
+                return -1;
+
+            }
+            if (str1.charAt(i) > ch )
+            {
+                return 1;
+            }
+        }
+        if (str1.length() == str2.length())
+        {
+            return 0;
+        }
+        if (str1.length() < str2.length())
+        {
+            return -1;
+        }
+        if (str1.length() > str2.length())
+        {
+            return 1;
         }
 
-        return 0;
+        return -2;
     }
 }
