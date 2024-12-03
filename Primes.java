@@ -22,6 +22,7 @@ public class Primes {
         }
         // print all primes and check how muh precent
         int count = 0;
+        System.out.println("Prime numbers up to " + n +":");
         for (int z = 0; z < n; z++)
         {
             if (isprime [z] == true)
